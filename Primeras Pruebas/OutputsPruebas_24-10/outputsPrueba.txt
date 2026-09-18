@@ -1,0 +1,71 @@
+Caso Base (dim=20, e=1e-5, nmax_iter=dim/5, n_steps=1000, restart=10000, debug=True, diagnostic_probe=22, inital_set=32)
+
+iter=999 speedup=2.3709 loss=3.2852e-05 parameters=13749 data size=139 
+Runtime of Non-decorated version is: 773.7294134000038 
+Runtime of MLGMRES decorator is: 1953.2107808000023 
+Runtime of MLGMRES (only GMRES time) is: 470.36996169999736 
+Runtime of training (backprop) is: 25423.792959199985
+
+
+GPU
+iter=999 speedup=1.7514 loss=4.2774e-05 parameters=13749 data size=139
+Runtime of Non-decorated version is:  645.099141199993
+Runtime of MLGMRES decorator is:  1020.2324826999775
+Runtime of MLGMRES (only GMRES time) is:  361.3097838999802
+Runtime of training (backprop) is:  6841.322953700226
+
+Caso n_steps=500, no hay diferencias en error ni runtime ni aceleración
+Más o menos la mitad de ejecuión
+
+iter=499 speedup=2.3614 loss=7.4821e-05 parameters=13749 data size=82
+Runtime of Non-decorated version is:  315.66580629999225
+Runtime of MLGMRES decorator is:  518.9364893000238
+Runtime of MLGMRES (only GMRES time) is:  188.65644039997278
+Runtime of training (backprop) is:  3388.3242427000114
+
+Como están dando resultados muy parecidos pero más rápidos vamos a utilizar n_steps=500 a partir de ahora
+
+Caso restart=10 -> decelera, tiempos mucho menores de ejecución (mala idea)
+iter=499 speedup=0.9923 loss=1.5296e-04 parameters=13749 data size=64
+Runtime of Non-decorated version is:  59.713274199995794
+Runtime of MLGMRES decorator is:  217.6711425000285
+Runtime of MLGMRES (only GMRES time) is:  58.989721300014935
+Runtime of training (backprop) is:  3610.8229527002695
+
+Caso restart=1000 -> no hay cambios notables (dejamos 10000)
+iter=499 speedup=3.1214 loss=7.2204e-05 parameters=13749 data size=81
+Runtime of Non-decorated version is:  324.7513160000344
+Runtime of MLGMRES decorator is:  538.6259153999636
+Runtime of MLGMRES (only GMRES time) is:  199.12358160001168
+Runtime of training (backprop) is:  3328.899067000133
+
+Los errores no parecen cambiar mucho, la convergencia es más rápida, se puede ver reflejado en los tiempos, acelera mucho más
+El diagnostic_probe se ha puesto así para que los casos en los que converja más rápido (voy a dejar la tolerancia así para los siguientes)
+Caso e=1e-3, n_steps=500, diagnostic_probe=15
+iter=499 speedup=4.3703 loss=5.0746e-05 parameters=13749 data size=69
+Runtime of Non-decorated version is:  174.7706209999742
+Runtime of MLGMRES decorator is:  245.92697339996084
+Runtime of MLGMRES (only GMRES time) is:  62.3104172999665
+Runtime of training (backprop) is:  3443.7336510000605
+
+
+El trainer sigue tardando mucho, lo demás se hace muchísimo más rápido
+¿El data size es mayor que el anterior?
+Muchísimos menos parámetros
+De las 4 gráficas salen cosas parecidas
+Caso dim=10 (cambiar la red neuronal a la 2D10)
+iter=499 speedup=6.0581 loss=3.7647e-05 parameters=2015 data size=78
+Runtime of Non-decorated version is:  30.201061499981734
+Runtime of MLGMRES decorator is:  135.55804689997967
+Runtime of MLGMRES (only GMRES time) is:  12.890594499964209
+Runtime of training (backprop) is:  2670.553967099884
+
+
+Training time 
+iter=499 speedup=4.8155 loss=3.6239e-05 parameters=2015 data size=86
+Runtime of Non-decorated version is:  29.713597700011633
+Runtime of MLGMRES decorator is:  163.7956683999946
+Runtime of MLGMRES (only GMRES time) is:  12.53809519999686
+Runtime of training (backprop) is:  138.2647422000009
+
+

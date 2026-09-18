@@ -1,0 +1,36 @@
+iter=29999 speedup=2.3643 loss=1.5130e-05 parameters=2015 data size=2955
+Runtime of Non-decorated version is:  2351.957448900328
+Runtime of MLGMRES decorator is:  8161.155689400075
+Runtime of MLGMRES (only GMRES time) is:  1161.9034566006449
+Runtime of training (backprop) is:  6269.639469000023
+Number of tains:  1107
+Train acceleration avarage:  1.0005124530678484
+
+
+
+Red Grande dim=50 (1:40 horas aprox)
+iter=499 speedup=2.3714 loss=4.8040e-03 parameters=17449 data size=76
+Runtime of Non-decorated version is:  2815.322748800034
+Runtime of MLGMRES decorator is:  3055.2586940999827
+Runtime of MLGMRES (only GMRES time) is:  1895.8893011998953
+Runtime of training (backprop) is:  206.4677506999942
+Number of tains:  18
+Train acceleration avarage:  1.0215804743056425
+
+Red Grande single layer dim=50 (2:25 horas aprox)
+iter=499 speedup=0.9823 loss=4.8403e-05 parameters=6250000 data size=80
+Runtime of Non-decorated version is:  3151.0880822999834
+Runtime of MLGMRES decorator is:  3928.391676399984
+Runtime of MLGMRES (only GMRES time) is:  2551.2208605000233
+Runtime of training (backprop) is:  103.37150719999954
+Number of tains:  20
+Train acceleration avarage:  1.0533883003869569
+
+Red pequeña dim=50 (2:20 horas aprox)
+iter=499 speedup=1.4790 loss=4.0649e-01 parameters=2015 data size=75
+Runtime of Non-decorated version is:  3050.3567680000124
+Runtime of MLGMRES decorator is:  3804.1454893999617
+Runtime of MLGMRES (only GMRES time) is:  2439.841771899977
+Runtime of training (backprop) is:  146.62163610000425
+Number of tains:  16
+Train acceleration avarage:  0.9887918995087003

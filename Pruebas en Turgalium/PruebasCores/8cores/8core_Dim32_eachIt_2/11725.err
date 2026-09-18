@@ -1,0 +1,5 @@
+
+real	43m36.694s
+user	43m21.395s
+sys	0m2.399s
+rm: cannot remove 'slurm-11746.out': No such file or directory

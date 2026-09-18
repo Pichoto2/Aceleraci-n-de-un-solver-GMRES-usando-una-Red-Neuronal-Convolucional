@@ -1,0 +1,6 @@
+mkdir: cannot create directory '1core_eachIt': File exists
+
+real	17m20.656s
+user	17m7.015s
+sys	0m2.454s
+rm: cannot remove 'slurm-9173.out': No such file or directory

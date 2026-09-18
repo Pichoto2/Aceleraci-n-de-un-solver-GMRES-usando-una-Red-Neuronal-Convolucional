@@ -1,0 +1,6 @@
+
+real	17m15.043s
+user	16m58.839s
+sys	0m3.156s
+scancel: error: Kill job error on job id 9490: Access/permission denied
+rm: cannot remove 'slurm-9490.out': No such file or directory

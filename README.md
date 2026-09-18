@@ -8,6 +8,7 @@ En este repositorio se encuentran los datos recopilados de las pruebas del TFM t
 En la sección principal del drive se encuentran los diferentes documentos:
  - DiagramaGMRES.drawio: diagrama de flujo del funcionamiento del código + arquitectura de la red neuronal.
  - Accelerating.GMRES.with.NNs_2021.pdf: artículo del que se basa en su mayoría el TFM.
+ - Resultados.pdf: presentación de las reuniones donde se han ido mostrando ciertos resultados.
 
 Por otro lado, se tienen diferentes carpetas donde se han ido almacenando las pruebas y los códigos:
  1. Otros códigos: post-procesado de aceleraciones o datos relacionados con la GPU (para la ejecución, cambiar la ruta de lectura de los ficheros (están en datosGPUyAceleraciones).

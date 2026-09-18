@@ -1,0 +1,5 @@
+mkdir: cannot create directory '4core_eachRestart': File exists
+
+real	19m9.915s
+user	18m49.842s
+sys	0m2.777s

@@ -1,0 +1,6 @@
+mkdir: cannot create directory '8core_Dim32_EachRestart_9': File exists
+
+real	41m52.001s
+user	41m42.637s
+sys	0m2.039s
+rm: cannot remove 'slurm-12306.out': No such file or directory

@@ -1,0 +1,18 @@
+1 entrenamiento, dim=30
+
+iter=499 speedup=1.4317 loss=2.3269e-02 parameters=17449 data size=33
+Runtime of Non-decorated version is:  465.21855379998306
+Runtime of MLGMRES decorator is:  382.68551670001034
+Runtime of MLGMRES (only GMRES time) is:  368.24801590000243
+Runtime of training (backprop) is:  8.38443929999994
+Number of tains:  1
+
+muchos entrenamientos, dim=30
+
+iter=499 speedup=1.3782 loss=4.5458e-03 parameters=17449 data size=48
+Runtime of Non-decorated version is:  358.9870872999818
+Runtime of MLGMRES decorator is:  313.17736820003483
+Runtime of MLGMRES (only GMRES time) is:  277.3257848000285
+Runtime of training (backprop) is:  31.500021700001525
+Number of tains:  7
+Train acceleration avarage:  1.002422863909545

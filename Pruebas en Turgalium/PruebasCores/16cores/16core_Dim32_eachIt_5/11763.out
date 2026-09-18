@@ -1,0 +1,14 @@
+STARTING SLURM JOB
+
+Sun Mar  8 10:41:34 CET 2026
+(32, 32)
+
+Runtime of Non-decorated version is:  1409.8497208734043
+Runtime of MLGMRES decorator is:  1047.0653549320996
+Runtime of MLGMRES (only GMRES time) is:  954.5152354792226
+Runtime of training (backprop) is:  81.04664057283662
+Number of tains:  40
+Train acceleration avarage:  1.0132308571686868
+
+Sun Mar  8 11:22:53 CET 2026
+FINISHED SLURM JOB
